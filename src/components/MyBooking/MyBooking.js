@@ -11,7 +11,7 @@ const MyBooking = (BookedCar) => {
     const currentTime = new Date().toLocaleTimeString();
     const [destination,setdestination] = useState([])
     useEffect(() => {
-      axios.get("http://localhost:3030/api/v1/user/getbookingdetails")
+      axios.get("https://rental-car-backend-app.onrender.com/getbookingdetails")
       .then((resp) => {
         setdestination(resp.data.users[resp.data.users.length-1])
       })

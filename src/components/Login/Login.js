@@ -20,7 +20,7 @@ function Login() {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const { data } = await axios.post("http://localhost:3030/api/v1/user/login", formData);
+            const { data } = await axios.post("https://rental-car-backend-app.onrender.com/api/v1/user/login", formData);
             localStorage.setItem(`${token}`, data.token);
             alert("User logged in successfully!");
             navigate('/bookingcar')

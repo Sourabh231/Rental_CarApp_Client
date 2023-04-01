@@ -54,7 +54,7 @@ function EditCar(singlecar) {
     
   };
   const Submitdata = () => {
-    axios.put(`http://localhost:3030/api/v1/user/editcar/${singlecar.singlecar._id}`, (formdata))
+    axios.put(`https://rental-car-backend-app.onrender.com/editcar/${singlecar.singlecar._id}`, (formdata))
       .then((resp) => {
         resp.json();
         
@@ -75,7 +75,7 @@ function EditCar(singlecar) {
   };
 
   const Deletedata = () => {
-    axios.delete(`http://localhost:3030/api/v1/user/editcar/${singlecar.singlecar._id}`, (formdata))
+    axios.delete(`https://rental-car-backend-app.onrender.com/api/v1/user/editcar/${singlecar.singlecar._id}`, (formdata))
       .then((resp) => {
         resp.json();
         

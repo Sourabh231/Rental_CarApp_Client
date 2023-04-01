@@ -12,7 +12,7 @@ const EditBookingDetails = (editBookedcar) => {
   const [mybook,setmybook] = useState(false);
   const [destination,setdestination] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3030/api/v1/user/getbookingdetails")
+    axios.get("https://rental-car-backend-app.onrender.com/api/v1/user/getbookingdetails")
     .then((resp) => {
       setdestination(resp.data.users[resp.data.users.length-1])
     })

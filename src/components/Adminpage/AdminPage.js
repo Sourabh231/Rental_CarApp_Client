@@ -24,7 +24,7 @@ function AdminPage() {
    setcardetails(true)
    }
    useEffect(()=>{
-    axios.get("http://localhost:3030/api/v1/user/adminpage")
+    axios.get("https://rental-car-backend-app.onrender.com/api/v1/user/adminpage")
     .then((resp)=>{
       setdata(resp.data)
       console.log(data)

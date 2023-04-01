@@ -22,7 +22,7 @@ function AdminLogin() {
         e.preventDefault(); // prevent default form submission behavior
 
         // send a POST request to your backend API endpoint with user's email and password
-        axios.post('http://localhost:3030/api/v1/user/adminlogin', {
+        axios.post('https://rental-car-backend-app.onrender.com/api/v1/user/adminlogin', {
           email: formdata.email,
           password: formdata.password
         })

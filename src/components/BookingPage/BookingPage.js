@@ -38,8 +38,8 @@ const BookinPage = () => {
   console.log(singlecar);
   useEffect(() => {
     Promise.all([
-      axios.get("http://localhost:3030/api/v1/user/adminpage"),
-      axios.get("http://localhost:3030/api/v1/user/getbookingdetails"),
+      axios.get("https://rental-car-backend-app.onrender.com/api/v1/user/adminpage"),
+      axios.get("https://rental-car-backend-app.onrender.com/api/v1/user/getbookingdetails"),
     ])
       .then(([adminData, bookingData]) => {
         setdata(adminData.data);

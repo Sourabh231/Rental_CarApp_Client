@@ -28,7 +28,7 @@ function Register() {
   }
 
   const Submitdata = () => {
-    axios.post("http://localhost:3030/api/v1/user/register", formdata)
+    axios.post("https://rental-car-backend-app.onrender.com/api/v1/user/register", formdata)
       .then((resp) => {
         alert("user register sucessfull");
         console.log(resp)

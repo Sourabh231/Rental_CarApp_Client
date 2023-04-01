@@ -27,7 +27,7 @@ function Adminregister() {
   }
 
   const Submitdata = () => {
-    axios.post("http://localhost:3030/api/v1/user/adminregister", formdata)
+    axios.post("https://rental-car-backend-app.onrender.com/adminregister", formdata)
       .then((resp) => {
         //console.log(resp)
         alert('successfully created admin account')

@@ -53,7 +53,7 @@ function AddCar() {
     
   };
   const Submitdata = () => {
-    axios.post("http://localhost:3030/api/v1/user/newcar", (formdata))
+    axios.post("https://rental-car-backend-app.onrender.com/api/v1/user/newcar", (formdata))
       .then((resp) => {
         resp.json();
       
